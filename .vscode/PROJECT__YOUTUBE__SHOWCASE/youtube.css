@@ -1,0 +1,212 @@
+/* Existing styles for sidebar and search bar (unchanged) */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.starting-point {
+    display: flex;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 15%;
+    border: 3px solid black;
+    background: #505050;
+    color: white;
+    padding: 10px;
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3, .explore-section, .more-from-youtube, .settings-section, .privacy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bar1 h2 {
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.bar2 a, .bar3 a, .explore-section a, .more-from-youtube a, .settings-section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.bar2 a:hover, .bar3 a:hover, .explore-section a:hover, .more-from-youtube a:hover, .settings-section a:hover {
+    background-color: #606060;
+}
+
+.bar2 img, .bar3 img, .explore-section img, .more-from-youtube img, .settings-section img {
+    margin-right: 10px;
+}
+
+.main-bar {
+    display: flex;
+    flex-direction: column;
+    margin-left:30px;
+    padding: 5px;
+    flex-grow: 1;
+}
+
+
+.search {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.search input {
+    flex-grow: 1;
+    align-items: center ;
+    max-width: 900px;
+   
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a0b0b;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #160e0e;
+}
+
+
+
+
+
+
+
+
+
+/* New styles for video cards */
+.video-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 1px;
+    overflow-y: auto;
+    margin: 5px;
+}
+
+.video {
+    background: #000000;
+    border-radius: 60px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-details {
+    padding: 5px;
+}
+
+.channel-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.channel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 16px;
+    margin: 0;
+    color: #d1b6b6;
+}
+
+.channel-name {
+    font-size: 14px;
+    color: #f7e4e4;
+}
+
+@media (max-width: 768px) {
+    .starting-point {
+        flex-direction: column;
+    }
+
+    .side-bar {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    .main-bar {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .search input {
+        width: 100%;
+    }
+
+    .video-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+
+.slide{
+    margin: 20px;
+    display: flex;
+    gap: 5px;
+    margin-bottom: 20px;
+
+    border: 2px solid black ;
+    padding: 10px 20px;
+    border: auto;
+    background-color: #010101;
+    color: rgb(2, 0, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

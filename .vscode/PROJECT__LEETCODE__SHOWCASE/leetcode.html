@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEET MATRIC</title>
+    <link rel="stylesheet" href="project2.css">
+    <link rel="icon" href="https://www.svgrepo.com/show/341985/leetcode.svg">
+    <link rel="stylesheet" href="leetcode.css">
+</head>
+<body>
+   <div class="container">
+         <!-- Heading -->
+         <h1>LEET MATRIC</h1>
+
+         <!-- User Input Section -->
+         <div class="user-container">
+            <p>Enter your LeetCode username below</p> <!-- Updated text for clarity -->
+            <div class="user-input-container">
+                <input 
+                    type="text" 
+                    placeholder="Enter your username" 
+                    id="user-input" 
+                    aria-label="LeetCode username input" <!-- Accessibility improvement -->
+                >
+                <button class="search-btn" aria-label="Search user stats">Search</button> <!-- Accessibility improvement -->
+            </div>
+         </div>
+
+         <!-- Stats Section -->
+         <div class="stats-container">
+            <div class="progress">
+                <!-- Easy Progress -->
+                <div class="progress-item">
+                    <div class="easy-progress circle" aria-labelledby="easy-label">
+                        <span id="easy-label">Easy: 0%</span> <!-- Default text added -->
+                    </div>
+                </div>
+
+                <!-- Medium Progress -->
+                <div class="progress-item">
+                    <div class="medium-progress circle" aria-labelledby="medium-label">
+                        <span id="medium-label">Medium: 0%</span> <!-- Default text added -->
+                    </div>
+                </div>
+
+                <!-- Hard Progress -->
+                <div class="progress-item">
+                    <div class="hard-progress circle" aria-labelledby="hard-label">
+                        <span id="hard-label">Hard: 0%</span> <!-- Default text added -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-card">
+                <!-- Stats cards content goes here -->
+                <div class="easy-stats stats-item">
+                    <h3>Easy Problems</h3>
+                    <p>Solved: <span class="easy-count">0</span></p>
+                </div>
+                <div class="medium-stats stats-item">
+                    <h3>Medium Problems</h3>
+                    <p>Solved: <span class="medium-count">0</span></p>
+                </div>
+                <div class="hard-stats stats-item">
+                    <h3>Hard Problems</h3>
+                    <p>Solved: <span class="hard-count">0</span></p>
+                </div>
+            </div>
+         </div>
+   </div>
+    
+    <script src="project2.js"></script>
+</body>
+</html>

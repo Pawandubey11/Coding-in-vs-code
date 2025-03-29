@@ -1,0 +1,392 @@
+
+/* Spotify Clone Styling */
+
+/* General Styles */
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+     margin: 0; 
+    padding: 20px;
+    justify-content: AUTO;
+}
+
+/* log .create */
+
+.logo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background-color: #1DB954; /* Spotify Green */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.arc {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    border: 6px solid black;
+    border-color: black transparent transparent transparent;
+    border-radius: 50%;
+}
+
+.arc1 {
+    top: 35px;
+    width: 70px;
+}
+
+.arc2 {
+    top: 50px;
+    width: 85px;
+}
+
+.arc3 {
+    top: 65px;
+    width: 100px;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #181818;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    
+}
+
+.sidebar-nav {
+    background: #111111;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+    
+}
+
+.logo img {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    background-color: #282828;
+}
+
+nav ul li span {
+    font-size: 22px;
+}
+
+/* Create Playlist Section */
+.create-playlist {
+    background-color: #282828;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.create-playlist h3, .create-playlist p {
+    margin: 12px 0;
+    color: #fff;
+    font-size: 18px;
+}
+
+.create-playlist button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.create-playlist button:hover {
+    background-color: #1ed760;
+}
+
+/* Scrollbar */
+.side-scrollbar {
+    height: 120px;
+    overflow-y: auto;
+}
+
+.side-scrollbar::-webkit-scrollbar {
+    background: transparent;
+}
+
+.side-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    width: 10px;
+}
+
+/* Privacy Section */
+.privacy {
+    font-size: 12px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.privacy ul {
+    list-style: none;
+}
+
+.privacy ul li {
+    padding: 0 12px 8px;
+}
+
+.privacy a {
+    font-weight: 600;
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.privacy a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px;
+    flex-grow: 1;
+}
+
+/* Top Navigation */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    background-color: #181818;
+}
+
+.prev-btn .nav-btn {
+    background: transparent;
+    border: none;
+    color: rgb(237, 56, 56);
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 8px 12px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.prev-btn .nav-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ////////////////////search kA liye */
+/* Style the navbar */
+
+
+.preve-btw {
+    text-align: center; /* Center the text */
+    background-color: #121212; /* Dark background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .preve-btw h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+.navbar {
+    background-color: #121212; /* Dark theme */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Header section */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Movie website title */
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #218838;
+  }
+  
+  /* Search container */
+  search {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Search label */
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Search input */
+  input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #d69d9d;
+    width: 200px;
+  }
+  
+  /* Search button */
+  button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+/* //////////////////login and sing */
+.login-btn {
+    margin-left: auto;
+}
+
+.login-btn .sign-up, .login-btn .login {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.login-btn .sign-up {
+    background: transparent;
+    color: white;
+    margin-right: 15px;
+}
+
+.login-btn .sign-up:hover {
+    color: #1DB954;
+}
+
+.login-btn .login {
+    background: #1DB954;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.login-btn .login:hover {
+    background: #1ed760;
+}
+
+/* Playlist Sections */
+.spotify-playlist, .spotify-playlist1 {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.spotify-playlist h2, .spotify-playlist1 h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ebe1e1;
+}
+
+.card, .card1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.items, .items1 {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    text-align: center;
+}
+
+.items:hover, .items1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.items img, .items1 img {
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+}
+
+.play-btn img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.play-btn img:hover {
+    transform: scale(1.1);
+}
+
+h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .card, .card1 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
