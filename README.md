@@ -1,1 +1,1 @@
-In .vscode section we SHOW_CASE_PROJECT
+In .VSCODE section we SHOW_CASE_PROJECT
